@@ -1,0 +1,89 @@
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    z-index: 1;
+}
+.carousel-content{
+    color: var(--dark);
+    font-weight: 900;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border: 10px solid var(--primary);
+    border-radius: 3rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.page-header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    /* background: url(/img/carousel-1.jpg) top right no-repeat; */
+    background-size: cover;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #999999;
+}
+
+
+/* Ensure the carousel controls are positioned correctly */
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .owl-carousel .owl-prev,
+  .owl-carousel .owl-next {
+    background: rgba(0, 0, 0, 0.5); /* Adjust color as needed */
+    color: #fff; /* Adjust text color as needed */
+    font-size: 24px; /* Adjust size as needed */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000; /* Ensure controls are above other content */
+  }
+  
+  .owl-carousel .owl-prev {
+    left: 10px; /* Adjust position as needed */
+  }
+  
+  .owl-carousel .owl-next {
+    right: 10px; /* Adjust position as needed */
+  }
+  
